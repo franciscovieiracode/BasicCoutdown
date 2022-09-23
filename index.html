@@ -12,14 +12,18 @@
 <body>
 
 <div>
-    <div class="text-center d-grid gap-3">    
+    <div class="buttons text-center d-grid gap-3">    
         <input class="p-4 bg-light border" type="button" id="start" value="Start/Resume Countdown">
         <input class="p-4 bg-light border" type="button" id="reset" value="Reset Countdown">
         <input class="p-4 bg-light border" type="button" id="pause" value="Pause Countdown">
     </div>
 </div>
-<br><br><br><br><br>
-<div class="display-1" id="timer">60</div>
+<div class="display-1" id="timer">
+    <p>60</p>
+</div>
+<div class="row justify-content-md-center">
+    <div id="alert" class="alert alert-success col-md-4 col-md-offset-4 text-center">Time is up, go take a break!</div>
+</div>
 
     <script src="script.js"></script>
 </body>

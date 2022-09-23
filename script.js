@@ -1,10 +1,11 @@
 const timerEl = document.getElementById("timer");
+const alert = document.getElementById("alert");
 document.getElementById("start").addEventListener("click", start);
 document.getElementById("pause").addEventListener("click", pause);
 document.getElementById("reset").addEventListener("click", reset);
 
 
-const startMin =60;
+const startMin =0.05;
 let time = startMin *60-1;
 let count = 0;
 
@@ -20,7 +21,7 @@ function start(){
     function decrement(){
         
         if (time <= 0){
-            alert("Time is up!");
+            alert.style.display = "block";
             pause();
         }
 
@@ -34,7 +35,8 @@ function start(){
 
 
 function reset(){
-    pause()
+    alert.style.display = "none";
+    pause();
     time = startMin *60-1;
     timerEl.innerHTML = 60;
     count = 0;    
