@@ -5,7 +5,7 @@ document.getElementById("pause").addEventListener("click", pause);
 document.getElementById("reset").addEventListener("click", reset);
 
 
-const startMin =0.05;
+const startMin =60;
 let time = startMin *60-1;
 let count = 0;
 
